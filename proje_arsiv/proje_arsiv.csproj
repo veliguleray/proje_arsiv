@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D9CD8CFF-B39E-4518-AE32-670286D09BB5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>proje_arsiv</RootNamespace>
+    <AssemblyName>proje_arsiv</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anaform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anaform.Designer.cs">
+      <DependentUpon>anaform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bölüm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bölüm.Designer.cs">
+      <DependentUpon>bölüm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Evrak\evrak_düzenle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evrak\evrak_düzenle.Designer.cs">
+      <DependentUpon>evrak_düzenle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Evrak\evrak_islemleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evrak\evrak_islemleri.Designer.cs">
+      <DependentUpon>evrak_islemleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Kullanıcı\kayit_ol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı\kayit_ol.Designer.cs">
+      <DependentUpon>kayit_ol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="oda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="oda.Designer.cs">
+      <DependentUpon>oda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="raf.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="raf.Designer.cs">
+      <DependentUpon>raf.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Kullanıcı\sifreunuttum.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kullanıcı\sifreunuttum.Designer.cs">
+      <DependentUpon>sifreunuttum.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sqlbaglantisi.cs" />
+    <EmbeddedResource Include="anaform.resx">
+      <DependentUpon>anaform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bölüm.resx">
+      <DependentUpon>bölüm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Evrak\evrak_düzenle.resx">
+      <DependentUpon>evrak_düzenle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Evrak\evrak_islemleri.resx">
+      <DependentUpon>evrak_islemleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kullanıcı\kayit_ol.resx">
+      <DependentUpon>kayit_ol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="oda.resx">
+      <DependentUpon>oda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="raf.resx">
+      <DependentUpon>raf.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Kullanıcı\sifreunuttum.resx">
+      <DependentUpon>sifreunuttum.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisi_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dosya.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dosya1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dosya2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dosyaa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginIcon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dosyafoto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dosyadüzenle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dosyasil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8c9a55c7499daf4df94c42cc69a3db7d.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\düzarkaplan.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
